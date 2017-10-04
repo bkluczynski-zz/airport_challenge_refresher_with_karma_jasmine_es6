@@ -6,6 +6,7 @@ describe("airport", function() {
     let airport;
     let plane;
     let weather;
+    let newAirport;
 
     beforeEach(function() {
         airport = new Airport();
@@ -72,6 +73,11 @@ describe("airport", function() {
                 airport.requestPlaneToLand(plane)
             }).toThrowError("oh sorry, we can't land your plane at the moment, you have to divert to the nearest airport")
 
+        })
+
+        it("allows to change a default value of airport's capacity", () => {
+          newAirport = new Airport(5)
+          expect(newAirport.capacity).toEqual(5)
         })
 
     })
