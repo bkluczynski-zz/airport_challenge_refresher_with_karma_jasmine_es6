@@ -1,3 +1,5 @@
 # javascript-es6-unit-tests
 
-http://www.syntaxsuccess.com/viewarticle/writing-jasmine-unit-tests-in-es6
+Doing TDD in JS ES6 in a good, old airport challenge with karma running jasmine
+
+To run tests suite type `npm run tests`

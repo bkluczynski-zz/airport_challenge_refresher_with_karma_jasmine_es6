@@ -77,7 +77,7 @@ describe("airport", function() {
 
         it("allows to change a default value of airport's capacity", () => {
           newAirport = new Airport(5)
-          expect(newAirport.capacity).toEqual(5)
+          expect(newAirport.capacity).toEqual(5);
         })
 
     })
